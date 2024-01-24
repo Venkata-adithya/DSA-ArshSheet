@@ -20,13 +20,13 @@ class Solution {
         }*/
         while(l < r){
             if(height[l]<height[r]){
-                    cal=height[l];
+                    cal=height[l];                //This part can be replaced by Math.min()
             }else{
                 cal=height[r];
             }
             area=cal*(r-l);
             if(max<area){
-                max=area;
+                max=area;                        //Here we cann use Math.max() instead of if-else
             }
             if(height[l]<height[r]){
                 l++;
